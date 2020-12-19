@@ -1,0 +1,137 @@
+.app-container
+{
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.form-container
+{
+    height: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.list-item
+{
+    cursor: pointer;
+    padding: 2px 5px 2px 5px;
+    border-radius: 10px;
+}
+
+.list-item:hover
+{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title
+{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    color: #b5cc18;
+    margin: 0;
+}
+
+.sm
+{
+    display: none;
+}
+
+.login-container
+{
+    width: 50%;
+    margin: auto;
+}
+
+.vPadding
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#list-segment
+{
+    display: block;
+}
+
+#list-segment-sm
+{
+    display: none;
+    margin-bottom: 10%;
+}
+
+.m-display
+{
+    display: flex;
+}
+
+.sm-display
+{
+    display: none;
+}
+
+.nav-container
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+}
+
+.navmenu-sm
+{
+    display: none;
+}
+
+@media (max-width: 640px) {
+    #list-segment{
+        display: none;
+    }
+
+    #list-segment-sm
+    {
+        display: block;
+    }
+
+    .login-container
+    {
+        width: 90vw;
+    }
+
+    .sm
+    {
+        display: block;
+        margin-bottom: 10%;
+    }
+
+    .m span
+    {
+        display: none;
+    }
+
+    .form-container
+    {
+        align-items: flex-start;
+        padding-top: 5%;
+    }
+
+    .m-display
+    {
+        display: none;
+    }
+
+    .sm-display
+    {
+        display: block;
+    }
+
+    .navmenu
+    {
+        display: none;
+    }
+
+    .navmenu-sm
+    {
+        display: block;
+    }
+}
